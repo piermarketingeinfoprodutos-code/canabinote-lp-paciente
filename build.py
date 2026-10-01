@@ -3,7 +3,7 @@ import json,html,re
 ROOT=Path(__file__).parent
 D=ROOT/'dist'
 S=[x['lines'] for x in json.loads((D/'copy.json').read_text(encoding='utf-8'))]
-WA='https://api.whatsapp.com/send/?phone=5511916901512&text=Oi%2C+quero+saber+mais+sobre+o+tratamento+com+cannabis+medicinal.+Convivo+com+%5Bcondi%C3%A7%C3%A3o%5D+e+gostaria+de+entender+se+pode+ser+um+caminho+pra+mim.&type=phone_number&app_absent=0'
+WA='https://wa.me/5511916901512?text=Oi%2C%20quero%20saber%20mais%20sobre%20o%20tratamento%20com%20cannabis%20medicinal.'
 MD='https://prd.canabinote.com/#/prescribers?formation=100'
 def fmt(s): return re.sub(r'==(.*?)==',r'<mark>\1</mark>',html.escape(s))
 def para(s,cls=''):return f'<p class="{cls}">{fmt(s)}</p>'

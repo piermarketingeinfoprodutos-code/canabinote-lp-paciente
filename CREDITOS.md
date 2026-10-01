@@ -24,3 +24,8 @@ Fonte Nunito Sans: Google Fonts, https://fonts.google.com/specimen/Nunito+Sans .
 
 
 As imagens do casal, dos frascos e do acompanhamento receberam tratamento com IA. A logo original da Canabinote foi preservada.
+
+
+## Revisão das imagens fornecidas pela cliente
+
+As imagens sistema-endocanabinoide.png, comparacao-acompanhamento.png, consulta-ilustrativa.png, paciente-acompanhamento.png e medica-ilustrativa.png foram adaptadas com a ferramenta integrada de geração de imagens a partir das referências fornecidas pela cliente. Retratos e interfaces são ilustrativos; não representam cadastro, avaliação ou resultado clínico real.
