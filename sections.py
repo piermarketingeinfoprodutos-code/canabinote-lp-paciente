@@ -10,7 +10,7 @@ strip_text=' · '.join(condition_names)
 strip='<div class="condition-strip" aria-label="Condições clínicas"><div class="ticker"><div>'+strip_text+'</div><div aria-hidden="true">'+strip_text+'</div></div><div class="strip-controls"><button type="button" data-strip="-1" aria-label="Condições anteriores">←</button><button type="button" data-strip="1" aria-label="Próximas condições">→</button></div></div>'
 s=S[1]
 rest='<section class="recognition section" id="rotina"><div class="wrap">'+sectionhead('01',s[1])+'<div class="routine-grid" id="rotina-cards" tabindex="0" aria-label="Quatro cenas da rotina; deslize para ver mais">'
-for i,photo,alt in [(2,'cansaco.webp','Pessoa descansando na cama.'),(0,'caminhada.webp','Casal de idosos caminhando juntos.'),(4,'ansiedade.webp','Mulher pensativa junto à janela.'),(5,'familia.webp','Família reunida na sala.')]:
+for i,photo,alt in [(2,'cansaco.webp','Pessoa descansando na cama.'),(0,'cuidado.webp','Pessoa recebendo apoio em casa.'),(4,'ansiedade.webp','Mulher pensativa junto à janela.'),(5,'caminhada.webp','Casal de idosos caminhando juntos.')]:
  rest+='<article class="routine-card reveal">'+img(photo,alt)+'<div><h3>'+fmt(s[2+i*2])+'</h3>'+para(s[3+i*2])+'</div></article>'
 rest+='</div><div class="swipe-progress" aria-hidden="true"><span></span></div>'+closing(s[17],s[19],False)+'</div></section>'
 
@@ -44,5 +44,6 @@ rest+='<section class="why section" id="canabinote"><div class="wrap">'+sectionh
 s=S[6]
 rest+='<section class="final-section" id="conversar"><div class="final-photo">'+img('casal-editado.webp','Casal aproveitando um momento de tranquilidade em casa.')+'</div><div class="wrap final-inner"><div class="final-copy reveal"><h2>'+fmt(s[1])+'</h2>'+para('A cannabis medicinal pode ser uma possibilidade para diferentes condições de saúde, mas sua indicação deve ser avaliada de forma individual, com orientação médica, informação de qualidade e acompanhamento ao longo da jornada.')+action(False)+'<a class="secondary final-team" href="'+html.escape(WA)+'" target="_blank" rel="noopener noreferrer">Falar com a nossa equipe →</a></div></div></section><footer><div class="wrap footer-inner">'+logo()+para(s[10])+'</div></footer>'
 rest+='<dialog id="condition-dialog" aria-labelledby="dialog-title"><button class="dialog-close" aria-label="Fechar detalhes">×</button><div class="dialog-image"></div><div class="dialog-body"><h2 id="dialog-title"></h2><p id="dialog-description"></p>'+action(False)+'</div></dialog><a class="floating-wa" href="'+html.escape(WA)+'" target="_blank" rel="noopener noreferrer" hidden>Quero saber mais <span aria-hidden="true">↗</span></a><script type="application/json" id="condition-data">'+json.dumps(conditions,ensure_ascii=False).replace('</','<\/')+'</script>'
+
 
 
